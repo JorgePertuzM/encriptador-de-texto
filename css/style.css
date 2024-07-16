@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+:root {
+    --color-primario: #9fcacf;
+    --color-secundario: #026c82;
+    --color-terciario: #67bcbf;
+    --color-cuaternario: #dedfda;
+    --color-hover: #dcd6da;
+
+    --fuente-inter: "Inter", sans-serif;
+    --fuente-tamanio: 1rem; /*1rem = 16px*/
+    --fuente-tamanio24: 1.5rem; /*1rem = 16px*/
+    --fuente-tamanio36: 2rem; /*1rem = 16px*/
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    box-sizing: border-box;
+}
+
+.header {
+    padding: 2% 0% 0% 15%;
+}
+
+.img-logo {
+    height: 48px;
+}
+
+.cuerpo {
+    display: flex;
+    align-items: center;
+    padding: 2% 15% 7% 15%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.contenido {
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    padding: 0%;
+    gap: 20px;
+}
+
+.col-izq {
+    width: 60%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.titulo {
+    font-size: var(--fuente-tamanio36);
+    font-family: var(--fuente-inter);
+    font-weight: 700;
+}
+
+.textro-entrada {
+    color: var(--color-secundario);
+    font-size: var(--fuente-tamanio36);
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    line-height: 48px;
+    padding-left: 8px;
+    padding-right: 8px;
+    flex-grow: 1; /* Ocupa el espacio restante */
+}
+
+.controles {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+}
+
+.btn {
+    width: 50%;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 8px;
+    font-family: var(--fuente-inter);
+    font-size: var(--fuente-tamanio);
+    font-weight: 400;
+    text-decoration: none;
+    border: 2px solid var(--color-terciario);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn-primario {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+}
+
+.btn-secundario {
+    background-color: var(--color-cuaternario);
+    color: var(--color-terciario);
+}
+
+.btn-primario:hover {
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
+
+}
+
+.btn-secundario:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-hover);
+}
+
+.col-der {
+    width: 40%;
+}
+
+.sin-resultado {
+    background-color: var(--color-cuaternario);
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 8px 16px var(--color-secundario); /* Efecto de sombreado */
+    padding: 3%; /* Padding de 3% */
+    width: 100%; /* Ocupa casi todo el ancho de .col-der */
+    height: 100%; /* Ocupa casi todo el alto de .col-der */
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el tamaño total */
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.la-imagen {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.subtitulo {
+    display: block;
+    font-size: var(--fuente-tamanio24); /*1.5rem = 24px*/
+    font-family: var(--fuente-inter);
+    font-weight: 700;
+    text-align: center;
+    padding: 8px;
+}
+
+.parrafo {
+    display: block;
+    font-size: var(--fuente-tamanio24); /*1.5rem = 24px*/
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+}
+
+.salida {
+    display: none;
+    height: 100%;
+    text-align: center;
+}
+
+.txt-salida {
+    background-color: var(--color-cuaternario);
+    color: var(--color-secundario);
+    font-size: var(--fuente-tamanio36);
+    font-family: var(--fuente-inter);
+    font-weight: 400;
+    line-height: 48px;
+    width: 100%;
+    height: 100%;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-bottom: 8px;
+    flex-grow: 1; /* Ocupa el espacio restante */
+}
+
+.btn-terciario {
+    background-color: var(--color-secundario);
+    color: var(--color-terciario);
+    margin-left: 25%;
+}
+
+.btn-terciario:hover {
+    background-color: var(--color-hover);
+    color: var(--color-secundario);
+
+}
+
+.footer {
+    background-color: var(--color-secundario);
+    padding: 24px;
+    color: var(--color-primario);
+    text-align: center;
+    font-family: var(--fuente-inter);
+    font-size: var(--fuente-tamanio24);
+    font-weight: 400;
+}
+
+/*
+Celulares pequeños: @media (max-width: 480px)
+Celulares medianos a grandes: @media (max-width: 600px)
+Tablets pequeñas: @media (max-width: 768px)
+Tablets grandes: @media (max-width: 992px)
+*/
+
+/*Tablets grandes: @media (max-width: 992px)*/
+@media (max-width: 992px) {
+    .header {
+        padding: 2% 5%;
+        text-align: center;
+    }
+
+    .img-logo {
+        height: 75px;
+    }
+
+    .cuerpo {
+        flex-direction: column;
+        padding: 0% 5% 5% 5%;
+    }
+
+    .contenido {
+        flex-direction: column;
+        height: 105vh; /*inicialmente estaba en 85*/
+        padding: 0%;
+    }
+
+    .col-izq {
+        width: auto;
+    }
+
+    .textro-entrada {
+        height: 33vh;
+        flex-grow: 1; /* Ocupa el espacio restante */
+    }
+
+    .col-der {
+        width: 100%; /* Ocupa casi todo el ancho de .col-der */
+        height: 98%; /* Ocupa casi todo el alto de .col-der */
+    }
+
+    .sin-resultado {
+        background-color: var(--color-cuaternario);
+        border-radius: 15px; /* Bordes redondeados */
+        box-shadow: 0 8px 16px var(--color-secundario); /* Efecto de sombreado */
+        padding: 3%; /* Padding de 3% */
+        width: 100%; /* Ocupa casi todo el ancho de .col-der */
+        height: 80%; /* Ocupa casi todo el alto de .col-der */
+        box-sizing: border-box; /* Asegura que el padding esté incluido en el tamaño total */
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
+
+    .la-imagen {
+        display: none; /* Ocultar la imagen en este media query */
+    }
+}
+
+/*Celulares medianos a grandes: @media (max-width: 600px)*/
+@media (max-width: 600px) {
+    .header {
+        padding: 2% 5%;
+        text-align: center;
+    }
+
+    .img-logo {
+        height: 75px;
+    }
+
+    .cuerpo {
+        flex-direction: column;
+        padding: 0% 5% 5% 5%;
+    }
+
+    .contenido {
+        flex-direction: column;
+        height: 80vh;
+        padding: 0%;
+    }
+
+    .col-izq {
+        width: auto;
+    }
+
+    .textro-entrada {
+        height: 33vh;
+        flex-grow: 1; /* Ocupa el espacio restante */
+    }
+
+    .controles {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-primario,
+    .btn-secundario {
+        width: 100%;
+    }
+
+    .col-der {
+        width: 100%; /* Ocupa casi todo el ancho de .col-der */
+        height: 100%; /* Ocupa casi todo el alto de .col-der */
+    }
+
+    .sin-resultado {
+        background-color: var(--color-cuaternario);
+        border-radius: 15px; /* Bordes redondeados */
+        box-shadow: 0 8px 16px var(--color-secundario); /* Efecto de sombreado */
+        padding: 3%; /* Padding de 3% */
+        width: 100%; /* Ocupa casi todo el ancho de .col-der */
+        height: 95%; /* Ocupa casi todo el alto de .col-der */
+        box-sizing: border-box; /* Asegura que el padding esté incluido en el tamaño total */
+        text-align: center; /* Centra el contenido horizontalmente */
+    }
+
+    .la-imagen {
+        display: none; /* Ocultar la imagen en este media query */
+    }
+}
