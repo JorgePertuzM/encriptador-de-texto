@@ -22,11 +22,11 @@ Este es un encriptador de texto simple que permite a los usuarios encriptar y de
 
 1. Clona el repositorio en tu máquina local:
     ```bash
-    git clone https://github.com/JorgePertuzM/portafolio-html-css.git
+    https://github.com/JorgePertuzM/encriptador-de-texto.git
     ```
 2. Navega al directorio del proyecto:
     ```bash
-    cd portafolio-html-css
+    cd encriptador-de-texto
     ```
 3. Abre el archivo `index.html` en tu navegador web.
 
